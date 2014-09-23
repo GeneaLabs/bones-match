@@ -1,4 +1,4 @@
-<?php namespace Genealabs\BonesMatch;
+<?php namespace GeneaLabs\Bones\Match;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,6 @@ class BonesMatchServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('genealabs/bones-match');
 	}
 
 	/**
@@ -28,7 +27,7 @@ class BonesMatchServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+        $this->app->bind('bones-match', 'GeneaLabs\Bones\Match\Match');
 	}
 
 	/**
@@ -38,7 +37,6 @@ class BonesMatchServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return [];
 	}
-
 }

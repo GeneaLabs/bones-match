@@ -4,7 +4,7 @@
     "authors": [
         {
             "name": "GeneaLabs, LLC",
-            "email": "info@genealabs.com"
+            "email": "hello@genealabs.com"
         }
     ],
     "require": {
@@ -16,7 +16,7 @@
             "src/migrations"
         ],
         "psr-0": {
-            "Genealabs\\BonesMatch\\": "src/"
+            "GeneaLabs\\Bones\\Match\\": "src/"
         }
     },
     "minimum-stability": "stable"
